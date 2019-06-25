@@ -1,0 +1,23 @@
+<launch>
+  
+  <node pkg="laserodom" type="laserodom" name="laserodom" output="screen">
+    <param name="odom_frame_" value="odom" />
+    <param name="base_frame_" value="base_link" />
+    <param name="scan_topic_" value="/scan_filtered" />
+    <param name="odom_topic_" value="/odom_out" />
+    <param name="odom_topic_sub_" value="/odom_in" />
+
+    <param name="publish_tf_" value="false" />
+
+    
+    <param name="min_laser_dis_" value="0.1" />
+    <param name="max_laser_dis_" value="25" />
+    <param name="det_x_" value="0.04" />
+    <param name="det_y_" value="0.04" />    
+    <param name="det_th_" value="0.03" />
+
+
+  </node>
+
+  
+</launch>
